@@ -4,13 +4,12 @@ A small end-to-end analytics project on run-to-failure engine data: SQL for data
 engineering, Python for remaining-useful-life (RUL) forecasts with uncertainty intervals, and a
 cost-based replacement rule built on those forecasts, delivered as a dashboard.
 
-The question it works through is the one a maintenance analytics team faces: given sensor histories,
-which assets need attention next, how sure are we, and what should we do about it?
+Maintenance analytics from sensor history:
 
 Data: NASA C-MAPSS turbofan degradation simulation, subset FD001 (100 training engines run to failure,
 100 test engines cut off before failure, single operating condition, single fault mode). See `data/DATA_SOURCE.md`.
 
-## What it does
+## Process
 
 1. **Load** the raw text files into SQLite (`src/build_db.py`, schema in `sql/01_schema.sql`).
 2. **Profile in SQL** (`sql/02_queries.sql`): cycle continuity, nulls, per-channel variance, fleet lifetimes
@@ -25,7 +24,7 @@ Data: NASA C-MAPSS turbofan degradation simulation, subset FD001 (100 training e
    Compared with run-to-failure and the best fixed replacement age under an assumed cost model.
 6. **Report**: `app.py` (Streamlit, interactive) and `src/make_dashboard.py` (single static HTML page).
 
-## Run it
+## Start Here
 
 ```bash
 pip install -r requirements.txt
