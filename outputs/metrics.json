@@ -1,0 +1,52 @@
+{
+  "n_train_engines": 100,
+  "n_test_engines": 100,
+  "n_channels_used": 14,
+  "rul_cap": 125,
+  "oof_rmse_all_cycles_vs_capped": 11.581628322051765,
+  "test_rmse_vs_true_rul": 13.361645756958309,
+  "test_rmse_vs_capped_true_rul": 12.285598102541416,
+  "test_mae_vs_true_rul": 10.4151513611124,
+  "test_nasa_score": 271.60783245037607,
+  "test_80pct_interval_coverage_vs_capped": 0.73,
+  "test_rmse_engines_within_30_cycles_of_failure": 9.425251233037685,
+  "n_test_engines_within_30_cycles_of_failure": 25,
+  "policy": {
+    "3": {
+      "best_threshold": 15,
+      "model_cost_per_cycle": 0.005485764441274891,
+      "failures": 0,
+      "life_used_pct": 88.35732635354563,
+      "run_to_failure_cost_per_cycle": 0.014541224371092046,
+      "best_fixed_interval_age": 146,
+      "best_fixed_interval_cost_per_cycle": 0.0074211502782931356
+    },
+    "5": {
+      "best_threshold": 15,
+      "model_cost_per_cycle": 0.005485764441274891,
+      "failures": 0,
+      "life_used_pct": 88.35732635354563,
+      "run_to_failure_cost_per_cycle": 0.024235373951820075,
+      "best_fixed_interval_age": 134,
+      "best_fixed_interval_cost_per_cycle": 0.007764670748096163
+    },
+    "10": {
+      "best_threshold": 15,
+      "model_cost_per_cycle": 0.005485764441274891,
+      "failures": 0,
+      "life_used_pct": 88.35732635354563,
+      "run_to_failure_cost_per_cycle": 0.04847074790364015,
+      "best_fixed_interval_age": 126,
+      "best_fixed_interval_cost_per_cycle": 0.007936507936507936
+    },
+    "20": {
+      "best_threshold": 15,
+      "model_cost_per_cycle": 0.005485764441274891,
+      "failures": 0,
+      "life_used_pct": 88.35732635354563,
+      "run_to_failure_cost_per_cycle": 0.0969414958072803,
+      "best_fixed_interval_age": 126,
+      "best_fixed_interval_cost_per_cycle": 0.007936507936507936
+    }
+  }
+}
